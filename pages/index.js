@@ -57,15 +57,6 @@ export default function Home() {
                 <link rel="shortcut icon" href="/logo.png"/>
             </Head>
             <div style={{display: "flex", gap: "8px", alignItems: "center"}}>
-                <div>
-                    <Icon styles={{fontSize: "1.1rem"}}>
-                        info
-                    </Icon>
-                    <ToolTip>
-                        Responsive, easy to use and customizable masonry layout.
-                    </ToolTip>
-                </div>
-
                 <h2>Demo Masonry component</h2>
                 <Dropdown modalStyles={{color: "var(--fabric-color-primary)"}}>
                     <Icon styles={{fontSize: "1.1rem"}}>
