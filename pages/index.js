@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css"
-import React, {useDeferredValue, useEffect, useMemo, useState} from "react";
-import {DataRow, Dropdown, DropdownOptions, Icon, Masonry, ToolTip, useAlert} from "@f-ui/core";
+import React, {useMemo, useState} from "react";
+import {DataRow, Dropdown, DropdownOptions, Icon, Masonry, useAlert} from "@f-ui/core";
 import Head from "next/head";
 
 function randomNumber(min, max) {
