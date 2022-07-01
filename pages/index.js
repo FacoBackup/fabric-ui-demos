@@ -1,5 +1,6 @@
+import styles from "../styles/Home.module.css"
 import React, {useDeferredValue, useEffect, useMemo, useState} from "react";
-import {DataRow, Icon, Masonry, ToolTip, useAlert} from "@f-ui/core";
+import {DataRow, Dropdown, DropdownOptions, Icon, Masonry, ToolTip, useAlert} from "@f-ui/core";
 import Head from "next/head";
 
 function randomNumber(min, max) {
@@ -66,11 +67,19 @@ export default function Home() {
                 </div>
 
                 <h2>Demo Masonry component</h2>
-                <a rel={"noreferrer"} href={"https://github.com/fabric-ui/core"} target={"_blank"}>
+                <Dropdown modalStyles={{color: "var(--fabric-color-primary)"}}>
                     <Icon styles={{fontSize: "1.1rem"}}>
                         open_in_new
                     </Icon>
-                </a>
+                    <DropdownOptions>
+                        <a className={styles.link} rel={"noreferrer"} href={"https://github.com/FacoBackup/fabric-ui-demos"} target={"_blank"}>
+                            Demo source code
+                        </a>
+                        <a className={styles.link} rel={"noreferrer"} href={"https://github.com/fabric-ui/core"} target={"_blank"}>
+                            Fabric UI on github
+                        </a>
+                    </DropdownOptions>
+                </Dropdown>
             </div>
             <div style={{display: "grid", color: "var(--fabric-color-secondary)"}}>
                 <div style={{fontSize: ".75rem", display: "flex", justifyContent: "space-between", height: "20px"}}>
